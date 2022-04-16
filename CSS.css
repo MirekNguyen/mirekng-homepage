@@ -1,0 +1,52 @@
+body {
+    font-family: "Roboto Light";
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior:smooth;
+}
+
+#frontPage {
+    height: 90vw;
+}
+
+.navigationBar {
+    list-style-type: none;
+    height: 5vw;
+    width: 85%;
+    display: flex;
+    line-height: 5vw;
+    text-align: center;
+}
+
+.navigationBar div {
+    float: left;
+    flex-grow: 1;
+    background-color: lightblue;
+    border-right-style: solid;
+    cursor: pointer;
+}
+
+.navigationBar div:hover {
+    background: lightsteelblue;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+}
+
+.card {
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 50%;
+    height: 150px;
+    line-height: 150px;
+    float: left;
+}
+.card:hover {
+    cursor: pointer;
+    background-color: lightsteelblue;
+}
