@@ -1,4 +1,4 @@
-function navigateTo()
+function navigateTo(page)
 {
-    document.location.href = "#projects";
+    document.location.href = page;
 }
