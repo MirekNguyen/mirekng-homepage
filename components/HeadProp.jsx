@@ -3,8 +3,11 @@ const HeadProp = () => {
    return (
       <>
          <Head>
-            <title>Mirek Nguyen</title>
-            <meta name="description" content="Mirek Nguyen" />
+            <title>Mirek Nguyen | Personal website</title>
+            <meta
+               name="description"
+               content="Mirek Nguyen is currently a student and an aspiring website developer. Welcome to my personal website."
+            />
             <meta
                name="viewport"
                content="width=device-width,initial-scale=1"

@@ -10,12 +10,7 @@ const CardsContainer = () => {
             >
                <Card title="Food" href="food" />
                <Card title="Vietnamist" href="vietnamist" />
-               <Card title="Finance" href="finance" />
-               <Card title="Koreanist" href="koreanist" />
                <Card title="Quiz" href="quiz" />
-               <Card title="Hypixel" href="hypixel" />
-               <Card title="Curl" href="curl" />
-               <Card title="Transmission" href="transmission" />
             </div>
          </div>
       </>
