@@ -7,8 +7,8 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
   return (
     <nav className="h-16 justify-between px-5 sm:px-20 items-center bg-transparent dark:text-slate-100 w-screen shadow">
-      <div className="flex justify-between h-16 items-center">
-        <div className="flex justify-between w-1/2 text-2xl font-montserrat sm:w-1/4">
+      <div className="flex justify-between h-16 items-center relative">
+        <div className="flex justify-between w-full text-xl sm:text-2xl font-montserrat">
           <Link href="/">Mirek Nguyen</Link>
         </div>
         <div className="flex sm:hidden">menu</div>
@@ -19,7 +19,7 @@ const Navbar = () => {
           <li className="ml-5">
             <Link href="/contact">Contact</Link>
           </li>
-          <li className="ml-5">
+          <li className="ml-5 text-2xl min-w-max">
             <button onClick={switchTheme}>
               {theme === "light" ? (
                 <img

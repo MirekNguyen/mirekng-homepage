@@ -1,16 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-   darkMode: 'class',
-   content: [
-      "./pages/**/*.{js,ts,jsx,tsx}",
-      "./components/**/*.{js,ts,jsx,tsx}",
-   ],
-   theme: {
-      extend: {
+  darkMode: "class",
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      minWidth: {
+        320: "320px",
       },
-      fontFamily: {
-         montserrat: ['Montserrat']
-      }
-   },
-   plugins: [],
-}
+    },
+    fontFamily: {
+      montserrat: ["Montserrat"],
+    },
+  },
+  plugins: [],
+};
