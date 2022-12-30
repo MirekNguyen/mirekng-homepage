@@ -29,12 +29,7 @@ export default function Home() {
           <br />
           <p>I am currently studying informatics to become a web developer</p>
           <br />
-          <Link href="about">
-            <button className="text-2xl text-white bg-red-400 rounded px-5 py-2">
-              About me
-            </button>
-          </Link>
-          <Link href="projects">
+          <Link href="#projects">
             <button className="text-2xl text-white bg-red-400 rounded px-5 py-2">
               My projects
             </button>
@@ -42,10 +37,11 @@ export default function Home() {
           <br />
         </div>
       </div>
-      <AboutBox />
-      <br />
-      <h1 className="text-center text-2xl">Projects</h1>
+      <h1 id="projects" className="text-center text-2xl py-3">
+        Projects
+      </h1>
       <CardContainer />
+      <AboutBox />
     </main>
   );
 }
