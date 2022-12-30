@@ -10,7 +10,6 @@ const CardsContainer = () => {
             >
                <Card title="Food" href="food" />
                <Card title="Vietnamist" href="vietnamist" />
-               <Card title="Quiz" href="quiz" />
             </div>
          </div>
       </>
