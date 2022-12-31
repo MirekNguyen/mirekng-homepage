@@ -1,20 +1,9 @@
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import CardContainer from "../components/index/CardsContainer.jsx";
 import AboutBox from "../components/AboutBox.jsx";
 
 export default function Home() {
-  const [mount, setMount] = useState(false);
-  useEffect(() => {
-    setMount(true);
-  }, []);
-  if (!mount) {
-    return null;
-  }
-
-  // Switch dark/light theme
-  // Toggle search bar
   return (
     <main className={`${styles.main} font-montserrat `}>
       <div

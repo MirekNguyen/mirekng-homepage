@@ -6,40 +6,30 @@ const Navbar = () => {
   }
   const { theme, setTheme } = useTheme();
   return (
-    <nav className="h-16 justify-between px-5 sm:px-20 items-center bg-transparent dark:text-slate-100 w-screen shadow">
-      <div className="flex justify-between h-16 items-center relative">
-        <div className="flex justify-between w-full text-xl sm:text-2xl font-montserrat">
+    <nav className="h-16 px-5 sm:px-14 bg-transparent dark:text-slate-100 w-screen font-montserrat">
+      <ul className="flex justify-center items-center text-xl w-full h-full">
+        <li className="mr-auto text-2xl">
           <Link href="/">Mirek Nguyen</Link>
-        </div>
-        <div className="flex sm:hidden">menu</div>
-        <ul className="sm:flex justify-between items-center text-xl invisible sm:visible hidden">
-          <li className="ml-5">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="ml-5">
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li className="ml-5 text-2xl min-w-max">
-            <button onClick={switchTheme}>
-              {theme === "light" ? (
-                <img
-                  src={`/light-mode.png`}
-                  alt="light-mode-icon"
-                  width="24px"
-                  height="24px"
-                ></img>
-              ) : (
-                <img
-                  src={`/dark-mode.png`}
-                  alt="dark-mode-icon"
-                  width="24px"
-                  height="24px"
-                ></img>
-              )}
-            </button>
-          </li>
-        </ul>
-      </div>
+        </li>
+        <li className="ml-5 invisible sm:visible">
+          <Link href="/">Home</Link>
+        </li>
+        <li className="ml-5 invisible sm:visible">
+          <Link href="/contact">Contact</Link>
+        </li>
+        <li
+          className="text-2xl min-w-max hover:cursor-pointer ml-5"
+          onClick={switchTheme}
+        >
+          <img
+            width="24px"
+            height="24px"
+            src={theme === "light" ? "/light-mode.png" : "/dark-mode.png"}
+            alt={theme === "light" ? "light-mode-icon" : "dark-mode-icon"}
+          ></img>
+        </li>
+        <li className="ml-5 sm:invisible sm:hidden">menu</li>
+      </ul>
     </nav>
   );
 };
