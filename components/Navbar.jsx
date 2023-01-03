@@ -10,6 +10,37 @@ const Navbar = () => {
   function toggleMenu() {
     menu === false ? setMenu(true) : setMenu(false);
   }
+  function burgerMenuIcon() {
+    return (
+      <div>
+        <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
+        <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
+        <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
+      </div>
+    );
+  }
+  function burgerMenuExpand(name, href) {
+    return (
+      <Link href={href}>
+        <div
+          className="flex justify-center items-center h-20 cursor-pointer"
+          onClick={toggleMenu}
+        >
+          {name}
+        </div>
+      </Link>
+    );
+  }
+  function darkModeIcon() {
+    return (
+      <img
+        width="24px"
+        height="24px"
+        src={theme === "light" ? "/light-mode.png" : "/dark-mode.png"}
+        alt={theme === "light" ? "light-mode-icon" : "dark-mode-icon"}
+      ></img>
+    );
+  }
   return (
     <nav
       className={`px-5 sm:px-14 bg-transparent dark:text-slate-100 w-screen font-montserrat ${
@@ -30,35 +61,18 @@ const Navbar = () => {
           className="text-2xl min-w-max hover:cursor-pointer ml-5"
           onClick={switchTheme}
         >
-          <img
-            width="24px"
-            height="24px"
-            src={theme === "light" ? "/light-mode.png" : "/dark-mode.png"}
-            alt={theme === "light" ? "light-mode-icon" : "dark-mode-icon"}
-          ></img>
+          {darkModeIcon()}
         </li>
         <li
           className="ml-5 sm:invisible sm:hidden hover:cursor-pointer"
           onClick={toggleMenu}
         >
-          <div>
-            <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
-            <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
-            <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
-          </div>
+          {burgerMenuIcon()}
         </li>
       </ul>
-      <ul
-        className={`flex justify-center items-center flex-col ${
-          menu === false ? "hidden" : "grid"
-        }`}
-      >
-        <li className="my-10 mx-auto" onClick={toggleMenu}>
-          <Link href="/">Home</Link>
-        </li>
-        <li className="my-10 mx-auto" onClick={toggleMenu}>
-          <Link href="/contact">Contact</Link>
-        </li>
+      <ul className={`flex flex-col ${menu === false ? "hidden" : "grid"}`}>
+        {burgerMenuExpand("Home", "/")}
+        {burgerMenuExpand("Contact", "/contact")}
       </ul>
     </nav>
   );
