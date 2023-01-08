@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useState } from "react";
+import Image from "next/image";
 const Navbar = () => {
   function switchTheme() {
     theme === "dark" ? setTheme("light") : setTheme("dark");
@@ -10,15 +11,21 @@ const Navbar = () => {
   function toggleMenu() {
     menu === false ? setMenu(true) : setMenu(false);
   }
-  function burgerMenuIcon() {
-    return (
-      <div>
-        <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
-        <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
-        <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
-      </div>
-    );
-  }
+  const burgerMenuIcon = (
+    <div>
+      <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
+      <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
+      <span className="block w-6 h-1 my-1 bg-black dark:bg-white"></span>
+    </div>
+  );
+  const darkModeIcon = (
+    <Image
+      width="24px"
+      height="24px"
+      src={theme === "light" ? "/light-mode.png" : "/dark-mode.png"}
+      alt={theme === "light" ? "light-mode-icon" : "dark-mode-icon"}
+    ></Image>
+  );
   function burgerMenuExpand(name, href) {
     return (
       <Link href={href}>
@@ -29,16 +36,6 @@ const Navbar = () => {
           {name}
         </div>
       </Link>
-    );
-  }
-  function darkModeIcon() {
-    return (
-      <img
-        width="24px"
-        height="24px"
-        src={theme === "light" ? "/light-mode.png" : "/dark-mode.png"}
-        alt={theme === "light" ? "light-mode-icon" : "dark-mode-icon"}
-      ></img>
     );
   }
   return (
@@ -55,23 +52,27 @@ const Navbar = () => {
           <Link href="/">Home</Link>
         </li>
         <li className="ml-5 hidden sm:block">
+          <Link href="/projects">Projects</Link>
+        </li>
+        <li className="ml-5 hidden sm:block">
           <Link href="/contact">Contact</Link>
         </li>
         <li
           className="text-2xl min-w-max hover:cursor-pointer ml-5"
           onClick={switchTheme}
         >
-          {darkModeIcon()}
+          {darkModeIcon}
         </li>
         <li
           className="ml-5 sm:invisible sm:hidden hover:cursor-pointer"
           onClick={toggleMenu}
         >
-          {burgerMenuIcon()}
+          {burgerMenuIcon}
         </li>
       </ul>
       <ul className={`flex flex-col ${menu === false ? "hidden" : "grid"}`}>
         {burgerMenuExpand("Home", "/")}
+        {burgerMenuExpand("Projects", "/projects")}
         {burgerMenuExpand("Contact", "/contact")}
       </ul>
     </nav>
