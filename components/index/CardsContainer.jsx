@@ -15,7 +15,7 @@ const CardsContainer = () => {
           />
           <Card
             title="Dungeon game"
-            href="vietnamist"
+            href="https://mireknguyen.itch.io/dungeon"
             info="projects#dungeon"
           />
         </div>
