@@ -6,7 +6,7 @@ const Contact = () => {
       <main className={` ${styles.main} ${styles.center} font-montserrat `}>
         <div className="text-center w-1/2 min-w-320">
           <h1 className="text-3xl">Contact form</h1>
-          <form method="POST" action="/mail.php">
+          <form method="POST" action="">
             <label htmlFor="text">Name</label>
             <br />
             <input

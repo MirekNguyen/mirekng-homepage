@@ -3,13 +3,28 @@ import styles from "../styles/Home.module.css";
 import CardContainer from "../components/index/CardsContainer.jsx";
 import AboutBox from "../components/AboutBox.jsx";
 import AnimatedPage from "../components/AnimatedPage";
+import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
+  const { theme } = useTheme();
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
   return (
     <AnimatedPage>
-      <main className={`${styles.main} font-montserrat `}>
+      <main className={`${styles.main} font-montserrat relative`}>
         <div
-          className={` ${styles.splashscreen} flex justify-center text-center dark:bg-neutral-900 bg-neutral-300 transition duration-500`}
+          className={` ${styles.splashscreen} ${theme === "light"
+              ? styles.splashscreenLight
+              : styles.splashscreenDark
+            } flex justify-center text-center dark:bg-neutral-900 bg-neutral-300 transition duration-500
+`}
         >
           <div className="self-center mb-20">
             <i className="fab fa-github"></i>
@@ -28,12 +43,12 @@ export default function Home() {
             </p>
             <br />
             <Link href="#projects">
-              <button className="text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2">
+              <button className="text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 border-white border-2">
                 My projects
               </button>
             </Link>
             <Link href="https://github.com/mireknguyen">
-              <button className="text-2xl sm:text-2xl text-white bg-red-400 rounded ml-5 px-5 py-2">
+              <button className="text-2xl sm:text-2xl text-white bg-red-400 rounded sm:ml-5 px-5 py-2 border-white border-2">
                 Github
               </button>
             </Link>

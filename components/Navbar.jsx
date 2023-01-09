@@ -1,13 +1,21 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { useState } from "react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 const Navbar = () => {
   function switchTheme() {
     theme === "dark" ? setTheme("light") : setTheme("dark");
   }
-  const { theme, setTheme } = useTheme("dark");
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
   const [menu, setMenu] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
   function toggleMenu() {
     menu === false ? setMenu(true) : setMenu(false);
   }
@@ -40,9 +48,8 @@ const Navbar = () => {
   }
   return (
     <nav
-      className={`px-5 sm:px-14 bg-transparent dark:text-slate-100 w-screen font-montserrat ${
-        menu === false ? "h-auto" : "h-auto"
-      }`}
+      className={`px-5 sm:px-14 bg-transparent dark:text-slate-100 w-screen font-montserrat ${menu === false ? "h-auto" : "h-auto"
+        }`}
     >
       <ul className="flex justify-center items-center text-xl w-full h-16">
         <li className="mr-auto text-xl sm:text-2xl">

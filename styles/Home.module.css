@@ -7,6 +7,17 @@
 }
 .splashscreen {
   height: 92vh;
+  aspect-ratio: 900/600;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.splashscreenDark {
+  background-image: url("../public/background-dark.svg");
+}
+.splashscreenLight {
+  background-image: url("../public/background-light.svg");
 }
 
 .navigationBar {
