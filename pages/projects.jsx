@@ -1,7 +1,8 @@
 import styles from "../styles/Home.module.css";
+import AnimatedPage from "../components/AnimatedPage";
 const projects = () => {
   return (
-    <>
+    <AnimatedPage>
       <main className={` ${styles.main} ${styles.center} font-montserrat `}>
         <h1 id="website" className="mt-10">
           About this website
@@ -73,7 +74,7 @@ const projects = () => {
           fringilla, vehicula vitae, justo. Maecenas lorem.
         </blockquote>
       </main>
-    </>
+    </AnimatedPage>
   );
 };
 export default projects;

@@ -1,7 +1,8 @@
 import styles from "../styles/Home.module.css";
+import AnimatedPage from "../components/AnimatedPage";
 const Contact = () => {
   return (
-    <>
+    <AnimatedPage>
       <main className={` ${styles.main} ${styles.center} font-montserrat `}>
         <div className="text-center w-1/2 min-w-320">
           <h1 className="text-3xl">Contact form</h1>
@@ -38,7 +39,7 @@ const Contact = () => {
           <article className="flex-1"></article>
         </div>
       </main>
-    </>
+    </AnimatedPage>
   );
 };
 export default Contact;
