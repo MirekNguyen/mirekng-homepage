@@ -5,7 +5,7 @@ import Footer from "../components/Footer.jsx";
 import HeadProp from "../components/HeadProp.jsx";
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider defaultTheme="system" enableSystem={true} attribute="class">
+    <ThemeProvider defaultTheme="dark" enableSystem={true} attribute="class">
       <HeadProp />
       <Navbar />
       <Component {...pageProps} />

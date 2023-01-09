@@ -6,7 +6,7 @@ const Navbar = () => {
   function switchTheme() {
     theme === "dark" ? setTheme("light") : setTheme("dark");
   }
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme("dark");
   const [menu, setMenu] = useState(false);
   function toggleMenu() {
     menu === false ? setMenu(true) : setMenu(false);
@@ -58,7 +58,7 @@ const Navbar = () => {
           <Link href="/contact">Contact</Link>
         </li>
         <li
-          className="text-2xl min-w-max hover:cursor-pointer ml-5"
+          className="hover:cursor-pointer ml-5 grid place-items-center"
           onClick={switchTheme}
         >
           {darkModeIcon}
