@@ -12,9 +12,15 @@ const projects = () => {
           About this website
         </h1>
         <div className="flex justify-center place-items-center flex-col md:flex-row">
-          <Image src="/images/raspberrypi.png" width="256px" height="256px" />
+          <Image
+            src="/images/raspberrypi.png"
+            alt="Raspberry Pi"
+            width="256px"
+            height="256px"
+          />
           <Image
             src="/images/nginx.png"
+            alt="Nginx"
             layout="fixed"
             width="256"
             height="128"
@@ -40,14 +46,25 @@ const projects = () => {
           Dungeon game
         </h1>
         <div className="flex flex-col md:flex-row">
-          <Image src="/images/dungeon.jpg" width="453" height="256" />
-          <Image src="/images/dungeon-2.jpg" width={453} height={256} />
+          <Image
+            src="/images/dungeon.jpg"
+            alt="Dungeon preview"
+            width="453"
+            height="256"
+          />
+          <Image
+            src="/images/dungeon-2.jpg"
+            alt="Dungeon preview 2"
+            width={453}
+            height={256}
+          />
         </div>
         <blockquote className="mx-20 max-w-2xl pt-4 pb-8">
           This is a Unity C# program for maturita which is a dungeon game with
           procedural generation. The game randomly generates dungeons each time
-          it is played, providing a unique experience for each playthrough. It's
-          now available for playing on itch.io, as it was exported using WebGL.
+          it is played, providing a unique experience for each playthrough. It
+          is now available for playing on itch.io, as it was exported using
+          WebGL.
         </blockquote>
         <div className="flex gap-4">
           <Link href="https://mireknguyen.itch.io/dungeon">
@@ -66,7 +83,12 @@ const projects = () => {
         <h1 id="food" className="mt-10 text-3xl pt-4 pb-8">
           Food search website
         </h1>
-        <Image src="/images/food.jpg" width="366px" height="256px" />
+        <Image
+          src="/images/food.jpg"
+          alt="Food preview"
+          width="366px"
+          height="256px"
+        />
         <blockquote className="mx-20 max-w-2xl py-8">
           This is a simple project for searching food and recipes, it includes
           calculations for prices and nutritional values. It was developed using
@@ -90,7 +112,12 @@ const projects = () => {
         <h1 id="food" className="mt-10 text-3xl pt-4 pb-8">
           Vietnamist
         </h1>
-        <Image src="/images/vietnamist.jpg" width="412px" height="256px" />
+        <Image
+          src="/images/vietnamist.jpg"
+          alt="Vietnamist preview"
+          width="412px"
+          height="256px"
+        />
         <blockquote className="mx-20 max-w-2xl py-8">
           Vietnamist is a web-based application designed to help users learn
           Vietnamese vocabulary in the context of sentences. It is is built
