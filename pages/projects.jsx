@@ -4,6 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaGamepad, FaDungeon, FaGlobeEurope } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
+import {
+  SiNginx,
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+  SiUnity,
+  SiCsharp,
+  SiPhp,
+  SiPostgresql,
+  SiJavascript,
+} from "react-icons/si";
 const projects = () => {
   return (
     <AnimatedPage>
@@ -31,6 +42,13 @@ const projects = () => {
           Pi 4 using Nginx. The front-end of this website is built using React
           library and Next.js framework. Styling is achieved with TailwindCSS.
         </blockquote>
+        <div className="flex items-center gap-4 pb-8">
+          <p className="inline">Technologies:</p>
+          <SiNextdotjs title="Next.js" size="32" />
+          <SiReact title="React" size="32" />
+          <SiTailwindcss title="TailwindCSS" size="32" />
+          <SiNginx title="Nginx" size="32" />
+        </div>
         <Link href="https://github.com/MirekNguyen/mirekng-homepage">
           <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
             Code
@@ -66,6 +84,12 @@ const projects = () => {
           is now available for playing on itch.io, as it was exported using
           WebGL.
         </blockquote>
+        <div className="flex items-center gap-4 pb-8">
+          <p className="inline">Technologies:</p>
+          <SiUnity title="Unity" size="32" />
+          <SiCsharp title="C#" size="32" />
+        </div>
+
         <div className="flex gap-4">
           <Link href="https://mireknguyen.itch.io/dungeon">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
@@ -95,6 +119,13 @@ const projects = () => {
           PHP and utilizes a Postgresql relational database to store and manage
           data.
         </blockquote>
+        <div className="flex items-center gap-4 pb-8">
+          <p className="inline">Technologies:</p>
+          <SiPhp title="PHP" size="32" />
+          <SiPostgresql title="Postgresql" size="32" />
+          <SiJavascript title="Javascript" size="32" />
+        </div>
+
         <div className="flex gap-4">
           <Link href="/food">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
@@ -117,12 +148,19 @@ const projects = () => {
           width="412px"
           height="256px"
         />
-        <blockquote className="mx-20 max-w-2xl py-8">
+        <blockquote className="mx-20 max-w-2xl py-4">
           Vietnamist is a web-based application designed to help users learn
           Vietnamese vocabulary in the context of sentences. It is is built
           using PHP and PostgresSQL and uses AJAX to load data asynchronously,
           making the user experience seamless and responsive.
         </blockquote>
+        <div className="flex items-center gap-4 pb-8">
+          <p className="inline">Technologies:</p>
+          <SiPhp title="PHP" size="32" />
+          <SiPostgresql title="Postgresql" size="32" />
+          <SiJavascript title="Javascript" size="32" />
+        </div>
+
         <div className="flex gap-4 pb-8">
           <Link href="/vietnamist">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
