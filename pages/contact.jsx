@@ -34,6 +34,7 @@ const Contact = () => {
             <input
               className="text-2xl text-white bg-red-400 rounded px-5 py-2"
               type="submit"
+              value="Submit"
             ></input>
           </form>
           <article className="flex-1"></article>

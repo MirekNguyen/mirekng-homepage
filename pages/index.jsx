@@ -20,10 +20,11 @@ export default function Home() {
     <AnimatedPage>
       <main className={`${styles.main} font-montserrat relative`}>
         <div
-          className={` ${styles.splashscreen} ${theme === "light"
+          className={` ${styles.splashscreen} ${
+            theme === "light"
               ? styles.splashscreenLight
               : styles.splashscreenDark
-            } flex justify-center text-center dark:bg-neutral-900 bg-neutral-300 transition duration-500
+          } flex justify-center text-center dark:bg-neutral-900 bg-neutral-300 transition duration-500
 `}
         >
           <div className="self-center mb-20">
@@ -42,7 +43,7 @@ export default function Home() {
               I am currently studying computer science to become a web developer
             </p>
             <br />
-            <Link href="#projects">
+            <Link href="/projects">
               <button className="text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 border-white border-2">
                 My projects
               </button>
