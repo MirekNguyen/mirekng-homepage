@@ -48,10 +48,11 @@ const Navbar = () => {
   }
   return (
     <nav
-      className={`px-5 sm:px-14 bg-transparent dark:text-slate-100 w-screen font-montserrat ${menu === false ? "h-auto" : "h-auto"
-        }`}
+      className={`2xl:flex 2xl:justify-center bg-transparent dark:text-slate-100 w-screen font-montserrat ${
+        menu === false ? "h-auto" : "h-auto"
+      }`}
     >
-      <ul className="flex justify-center items-center text-xl w-full h-16">
+      <ul className="flex justify-center items-center text-xl 2xl:w-1/2 w-screen h-16 px-8 sm:px-12 md:px-20 xl:px-28">
         <li className="mr-auto text-xl sm:text-2xl">
           <Link href="/">Mirek Nguyen</Link>
         </li>

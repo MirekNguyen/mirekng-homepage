@@ -5,7 +5,7 @@ const Footer = () => {
       <footer
         className={`${
           styles.footer
-        } ${"py-10 bg-gray-100 dark:bg-neutral-900 text-center"}`}
+        } ${"py-6 bg-gray-100 dark:bg-neutral-900 text-center"}`}
       >
         <p className={`${styles.center} ${"opacity: 0.5;"}`}>
           © Copyright 2023 by Mirek Nguyen. All Rights reserved.

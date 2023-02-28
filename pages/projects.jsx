@@ -15,21 +15,21 @@ const projects = () => {
           <Image
             src="/images/raspberrypi.png"
             alt="Raspberry Pi"
-            width="256px"
-            height="256px"
+            width="384"
+            height="256"
           />
           <Image
             src="/images/nginx.png"
             alt="Nginx"
             layout="fixed"
-            width="256"
-            height="128"
+            width="285"
+            height="96"
           />
         </div>
         <blockquote className="mx-20 max-w-2xl pb-4">
           My personal website and most of my projects are hosted on a Raspberry
           Pi 4 using Nginx. The front-end of this website is built using React
-          library and Next.js framework. Styling is achieved using TailwindCSS.
+          library and Next.js framework. Styling is achieved with TailwindCSS.
         </blockquote>
         <Link href="https://github.com/MirekNguyen/mirekng-homepage">
           <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
@@ -104,8 +104,7 @@ const projects = () => {
           </Link>
           <Link href="https://github.com/MirekNguyen/food-search-website">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
-              Code
-              <FaGithub className="ml-2 inline" />
+              <FaGithub className="inline" />
             </button>
           </Link>
         </div>
@@ -133,8 +132,7 @@ const projects = () => {
           </Link>
           <Link href="https://github.com/MirekNguyen/vietnamist">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
-              Code
-              <FaGithub className="ml-2 inline" />
+              <FaGithub className="inline" />
             </button>
           </Link>
         </div>
