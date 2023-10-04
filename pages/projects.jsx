@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import AnimatedPage from "../components/AnimatedPage";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaGamepad, FaGlobeEurope } from "react-icons/fa";
+import { FaGithub, FaGamepad, FaGlobeEurope, FaClipboardList } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 import {
   SiNginx,
@@ -14,6 +14,10 @@ import {
   SiPhp,
   SiPostgresql,
   SiJavascript,
+  SiDocker,
+  SiGnubash,
+  SiLinux,
+  SiFedora,
 } from "react-icons/si";
 const projects = () => {
   return (
@@ -103,36 +107,40 @@ const projects = () => {
         <hr className="w-screen max-w-2xl h-px bg-black dark:bg-white border-0 my-8" />
 
         <h1 id="food" className="text-3xl pb-8 pt-4">
-          Food search website
+          Self hosted
         </h1>
         <Image
-          src="/images/food.jpg"
+          src="/images/self-hosted.png"
           alt="Food preview"
-          width="366px"
-          height="256px"
+          width="674px"
+          height="293px"
         />
         <blockquote className="mx-20 max-w-2xl pt-8 pb-4">
-          This is a simple project for searching food and recipes, it includes
-          calculations for prices and nutritional values. It was developed using
-          PHP and utilizes a Postgresql relational database to store and manage
-          data.
+          This server consists of self-hosted services each running in its own
+          subdomain. These services are efficiently managed and isolated using
+          Docker containers, ensuring seamless operation. I've set up this
+          system as a cost-effective alternative to existing paid cloud
+          services. The services are orchestrated and supervised using systemd
+          and Bash scripts, enabling easy maintenance and scalability.
         </blockquote>
         <div className="flex items-center gap-4 pb-8">
           <p className="inline">Technologies:</p>
-          <SiPhp title="PHP" size="32" />
-          <SiPostgresql title="Postgresql" size="32" />
-          <SiJavascript title="Javascript" size="32" />
+          <SiDocker title="Docker" size="32" />
+          <SiGnubash title="Bash" size="32" />
+          <SiLinux title="Linux" size="32" />
+          <SiFedora title="Fedora" size="32" />
         </div>
         <div className="flex gap-4 mb-8">
-          <Link href="/food">
+          <Link href="https://dashboard.mirekng.com">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
-              Visit
-              <FaGlobeEurope className="ml-2 inline" />
+              Dashboard
+              <FaClipboardList className="ml-2 inline" />
             </button>
           </Link>
           <Link href="https://github.com/MirekNguyen/food-search-website">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
-              <FaGithub className="inline" />
+              Github
+              <FaGithub className="ml-2 inline" />
             </button>
           </Link>
         </div>
@@ -160,15 +168,10 @@ const projects = () => {
         </div>
 
         <div className="flex gap-4 pb-8 mb-8">
-          <Link href="/vietnamist">
-            <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
-              Visit
-              <FaGlobeEurope className="ml-2 inline" />
-            </button>
-          </Link>
           <Link href="https://github.com/MirekNguyen/vietnamist">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
-              <FaGithub className="inline" />
+              Github
+              <FaGithub className="ml-2 inline" />
             </button>
           </Link>
         </div>
