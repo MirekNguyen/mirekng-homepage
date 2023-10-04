@@ -118,7 +118,7 @@ const projects = () => {
         <blockquote className="mx-20 max-w-2xl pt-8 pb-4">
           This server consists of self-hosted services each running in its own
           subdomain. These services are efficiently managed and isolated using
-          Docker containers, ensuring seamless operation. I've set up this
+          Docker containers, ensuring seamless operation. I&apos;ve set up this
           system as a cost-effective alternative to existing paid cloud
           services. The services are orchestrated and supervised using systemd
           and Bash scripts, enabling easy maintenance and scalability.
