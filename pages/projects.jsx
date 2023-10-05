@@ -2,7 +2,12 @@ import styles from "../styles/Home.module.css";
 import AnimatedPage from "../components/AnimatedPage";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaGamepad, FaGlobeEurope, FaClipboardList } from "react-icons/fa";
+import {
+  FaGithub,
+  FaGamepad,
+  FaGlobeEurope,
+  FaClipboardList,
+} from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 import {
   SiNginx,
@@ -63,18 +68,20 @@ const projects = () => {
         <h1 id="dungeon" className="flex place-items-center text-3xl pb-8 pt-4">
           Dungeon game
         </h1>
-        <div className="flex flex-col md:flex-row">
+                  <div className="w-screen h-auto flex flex-col md:flex-row items-center justify-center">
           <Image
             src="/images/dungeon.jpg"
             alt="Dungeon preview"
             width="453"
             height="256"
+            fill
           />
           <Image
             src="/images/dungeon-2.jpg"
             alt="Dungeon preview 2"
             width={453}
             height={256}
+            fill
           />
         </div>
         <blockquote className="mx-20 max-w-2xl pt-8 pb-4">
@@ -109,12 +116,15 @@ const projects = () => {
         <h1 id="self-hosted" className="text-3xl pb-8 pt-4">
           Self hosted
         </h1>
-        <Image
-          src="/images/self-hosted.png"
-          alt="Self-hosted preview"
-          width="674px"
-          height="293px"
-        />
+        <div className="w-screen h-auto flex items-center justify-center">
+          <Image
+            src="/images/self-hosted.png"
+            alt="Self-hosted preview"
+            width="674px"
+            height="293px"
+            fill
+          />
+        </div>
         <blockquote className="mx-20 max-w-2xl pt-8 pb-4">
           This server consists of self-hosted services each running in its own
           subdomain. These services are efficiently managed and isolated using
@@ -148,12 +158,15 @@ const projects = () => {
         <h1 id="vietnamist" className="text-3xl pb-8 pt-4">
           Vietnamist
         </h1>
-        <Image
-          src="/images/vietnamist.jpg"
-          alt="Vietnamist preview"
-          width="412px"
-          height="256px"
-        />
+        <div className="w-screen h-auto flex items-center justify-center">
+          <Image
+            src="/images/vietnamist.jpg"
+            alt="Vietnamist preview"
+            width="412px"
+            height="256px"
+            fill
+          />
+        </div>
         <blockquote className="mx-20 max-w-2xl pt-8 pb-4">
           Vietnamist is a web-based application designed to help users learn
           Vietnamese vocabulary in the context of sentences. It is is built
