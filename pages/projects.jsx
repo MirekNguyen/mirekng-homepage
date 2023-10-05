@@ -97,7 +97,7 @@ const projects = () => {
           <SiCsharp title="C#" size="32" />
         </div>
 
-        <div className="flex gap-4 mb-8">
+        <div className="flex flex-col md:flex-row gap-4 mb-8">
           <Link href="https://mireknguyen.itch.io/dungeon">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
               Try it
@@ -105,7 +105,7 @@ const projects = () => {
             </button>
           </Link>
           <Link href="/dungeon">
-            <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
+            <button className="flex justify-center place-items-center text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
               Docs
               <CgFileDocument className="ml-2 inline" />
             </button>
@@ -140,7 +140,7 @@ const projects = () => {
           <SiLinux title="Linux" size="32" />
           <SiFedora title="Fedora" size="32" />
         </div>
-        <div className="flex gap-4 mb-8">
+        <div className="flex flex-col md:flex-row gap-4 mb-8">
           <Link href="https://dashboard.mirekng.com">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
               Dashboard
@@ -148,7 +148,7 @@ const projects = () => {
             </button>
           </Link>
           <Link href="https://github.com/MirekNguyen/self-hosted">
-            <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
+            <button className="flex justify-center place-items-center text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
               Github
               <FaGithub className="ml-2 inline" />
             </button>
