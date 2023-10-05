@@ -106,12 +106,12 @@ const projects = () => {
         </div>
         <hr className="w-screen max-w-2xl h-px bg-black dark:bg-white border-0 my-8" />
 
-        <h1 id="food" className="text-3xl pb-8 pt-4">
+        <h1 id="self-hosted" className="text-3xl pb-8 pt-4">
           Self hosted
         </h1>
         <Image
           src="/images/self-hosted.png"
-          alt="Food preview"
+          alt="Self-hosted preview"
           width="674px"
           height="293px"
         />
@@ -137,7 +137,7 @@ const projects = () => {
               <FaClipboardList className="ml-2 inline" />
             </button>
           </Link>
-          <Link href="https://github.com/MirekNguyen/food-search-website">
+          <Link href="https://github.com/MirekNguyen/self-hosted">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
               Github
               <FaGithub className="ml-2 inline" />
@@ -145,7 +145,7 @@ const projects = () => {
           </Link>
         </div>
         <hr className="w-screen max-w-2xl h-px bg-black dark:bg-white border-0 my-8" />
-        <h1 id="food" className="text-3xl pb-8 pt-4">
+        <h1 id="vietnamist" className="text-3xl pb-8 pt-4">
           Vietnamist
         </h1>
         <Image
