@@ -165,19 +165,19 @@ const projects = () => {
         <h1 id="symfony-api" className="text-3xl pb-8 pt-4">
           Symfony Dummy API
         </h1>
-        <div className="w-screen h-auto flex flex-col md:flex-row md:gap-2 items-center justify-center">
-          <Image
-            src="/images/symfony-api-schema.jpg"
-            alt="Symfony API preview"
-            width="280px"
-            height="257px"
-            fill
-          />
+        <div className="w-screen h-auto flex flex-col md:flex-row gap-2 items-center justify-center">
           <Image
             src="/images/schema.jpg"
             alt="Symfony API schema"
             width={453}
             height={256}
+            fill
+          />
+          <Image
+            src="/images/symfony-api-schema.jpg"
+            alt="Symfony API preview"
+            width="280px"
+            height="257px"
             fill
           />
         </div>
@@ -198,7 +198,7 @@ const projects = () => {
           <TbApi title="API" size="32" />
         </div>
 
-        <div className="flex gap-4 pb-8 mb-8">
+        <div className="flex flex-col md:flex-row gap-4 mb-8">
           <Link href="https://api.mirekng.net">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
               Try API
