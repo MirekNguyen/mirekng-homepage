@@ -148,7 +148,7 @@ const projects = () => {
           <SiFedora title="Fedora" size="32" />
         </div>
         <div className="flex flex-col md:flex-row gap-4 mb-8">
-          <Link href="https://dashboard.mirekng.net">
+          <Link href="https://dashboard.mirekng.com">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
               Dashboard
               <FaClipboardList className="ml-2 inline" />
@@ -199,7 +199,7 @@ const projects = () => {
         </div>
 
         <div className="flex flex-col md:flex-row gap-4 mb-8">
-          <Link href="https://api.mirekng.net">
+          <Link href="https://api.mirekng.com">
             <button className="flex place-items-center text-2xl sm:text-2xl text-white bg-red-400 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
               Try API
               <FaFileCode className="ml-2 inline" />
