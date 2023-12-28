@@ -28,8 +28,8 @@ const Navbar = () => {
   );
   const darkModeIcon = (
     <Image
-      width="24px"
-      height="24px"
+      width={24}
+      height={24}
       src={theme === "light" ? "/light-mode.png" : "/dark-mode.png"}
       alt={theme === "light" ? "light-mode-icon" : "dark-mode-icon"}
     ></Image>
