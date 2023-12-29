@@ -47,7 +47,7 @@ const EventManager = () => {
             <FaFileCode className="ml-2 inline" />
           </button>
         </Link>
-        <Link href="https://github.com/MirekNguyen/symfony-api">
+        <Link href="https://github.com/MirekNguyen/event-manager">
           <button className="flex place-items-center text-2xl sm:text-2xl text-white dark:bg-transparent bg-gray-800 rounded px-5 py-2 dark:border-white border-gray-800 border-2">
             Github
             <FaGithub className="ml-2 inline" />
