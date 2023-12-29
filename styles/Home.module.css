@@ -14,10 +14,10 @@
   background-size: cover;
 }
 .splashscreenDark {
-  background-image: url("../public/background-dark.svg");
+  background-image: url("../public/background/background-dark.svg");
 }
 .splashscreenLight {
-  background-image: url("../public/background-light.svg");
+  background-image: url("../public/background/background-light.svg");
 }
 
 .navigationBar {
