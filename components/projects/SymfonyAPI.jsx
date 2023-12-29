@@ -11,17 +11,17 @@ const SymfonyApi = () => {
       </h1>
       <div className="w-screen h-auto flex flex-col md:flex-row gap-2 items-center justify-center">
         <Image
-          src="/images/schema.jpg"
+          src="/images/projects/symfony-api/schema.jpg"
           alt="Symfony API schema"
           width={453}
           height={256}
           className="rounded-md"
         />
         <Image
-          src="/images/symfony-api-schema.jpg"
+          src="/images/projects/symfony-api/symfony-api-schema.jpg"
           alt="Symfony API preview"
           width={280}
-          height={257}
+          height={256}
           className="rounded-md"
         />
       </div>

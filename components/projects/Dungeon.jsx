@@ -11,14 +11,14 @@ const Dungeon = () => {
       </h1>
       <div className="w-screen h-auto flex flex-col md:flex-row items-center justify-center gap-2">
         <Image
-          src="/images/dungeon.jpg"
+          src="/images/projects/dungeon/dungeon.jpg"
           alt="Dungeon preview"
           width={453}
           height={256}
           className="rounded-md"
         />
         <Image
-          src="/images/dungeon-2.jpg"
+          src="/images/projects/dungeon/dungeon-2.jpg"
           alt="Dungeon preview 2"
           width={453}
           height={256}

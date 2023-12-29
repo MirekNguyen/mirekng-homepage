@@ -30,7 +30,7 @@ const Navbar = () => {
     <Image
       width={24}
       height={24}
-      src={theme === "light" ? "/light-mode.png" : "/dark-mode.png"}
+      src={theme === "light" ? "/images/dark-mode/light-mode.png" : "/images/dark-mode/dark-mode.png"}
       alt={theme === "light" ? "light-mode-icon" : "dark-mode-icon"}
     ></Image>
   );

@@ -10,14 +10,14 @@ const EventManager = () => {
       </h1>
       <div className="w-screen h-auto flex flex-col md:flex-row gap-2 items-center justify-center">
         <Image
-          src="/images/projects/event-manager-1.jpg"
+          src="/images/projects/event-manager/event-manager-1.jpg"
           alt="Symfony API schema"
           width={350}
           height={300}
           className="rounded-md"
         />
         <Image
-          src="/images/projects/event-manager-3.jpg"
+          src="/images/projects/event-manager/event-manager-2.jpg"
           alt="Symfony API preview"
           width={350}
           height={300}

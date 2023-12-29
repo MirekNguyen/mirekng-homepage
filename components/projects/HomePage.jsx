@@ -10,16 +10,15 @@ const HomePage = () => {
       </h1>
       <div className="flex justify-center place-items-center flex-col md:flex-row">
         <Image
-          src="/images/raspberrypi.png"
+          src="/images/projects/homepage/raspberrypi.png"
           alt="Raspberry Pi"
           width={384}
           height={256}
           className="rounded-md"
         />
         <Image
-          src="/images/nginx.png"
+          src="/images/projects/homepage/nginx.png"
           alt="Nginx"
-          layout="fixed"
           width={285}
           height={96}
           className="rounded-md"

@@ -10,7 +10,7 @@ const SelfHosted = () => {
       </h1>
       <div className="w-screen h-auto flex items-center justify-center">
         <Image
-          src="/images/self-hosted.png"
+          src="/images/projects/self-hosted/self-hosted.png"
           alt="Self-hosted preview"
           width={674}
           height={293}
