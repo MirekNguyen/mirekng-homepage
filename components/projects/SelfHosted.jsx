@@ -14,6 +14,7 @@ const SelfHosted = () => {
           alt="Self-hosted preview"
           width={674}
           height={293}
+          className="rounded-md"
         />
       </div>
       <blockquote className="mx-20 max-w-2xl pt-8 pb-4">

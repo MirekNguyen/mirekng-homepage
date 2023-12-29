@@ -15,12 +15,14 @@ const SymfonyApi = () => {
           alt="Symfony API schema"
           width={453}
           height={256}
+          className="rounded-md"
         />
         <Image
           src="/images/symfony-api-schema.jpg"
           alt="Symfony API preview"
           width={280}
           height={257}
+          className="rounded-md"
         />
       </div>
       <blockquote className="mx-20 max-w-2xl pt-8 pb-4">

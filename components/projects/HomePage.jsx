@@ -14,6 +14,7 @@ const HomePage = () => {
           alt="Raspberry Pi"
           width={384}
           height={256}
+          className="rounded-md"
         />
         <Image
           src="/images/nginx.png"
@@ -21,6 +22,7 @@ const HomePage = () => {
           layout="fixed"
           width={285}
           height={96}
+          className="rounded-md"
         />
       </div>
       <blockquote className="mx-20 max-w-2xl pb-4">

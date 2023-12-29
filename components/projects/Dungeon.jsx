@@ -9,18 +9,20 @@ const Dungeon = () => {
       <h1 id="dungeon" className="flex place-items-center text-3xl pb-8 pt-4">
         Dungeon game
       </h1>
-      <div className="w-screen h-auto flex flex-col md:flex-row items-center justify-center">
+      <div className="w-screen h-auto flex flex-col md:flex-row items-center justify-center gap-2">
         <Image
           src="/images/dungeon.jpg"
           alt="Dungeon preview"
           width={453}
           height={256}
+          className="rounded-md"
         />
         <Image
           src="/images/dungeon-2.jpg"
           alt="Dungeon preview 2"
           width={453}
           height={256}
+          className="rounded-md"
         />
       </div>
       <blockquote className="mx-20 max-w-2xl pt-8 pb-4">
