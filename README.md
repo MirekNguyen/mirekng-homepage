@@ -18,26 +18,33 @@ You will need npm or pnpm installed on your system.
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/mireknguyen/mirekng-homepage.git`
-2. Navigate to the project directory: cd mirekng-homepage
-3. Install dependencies: pnpm install
+2. Navigate to the project directory: `cd mirekng-homepage`
 
 ## Usage
 
-### Locally using pnpm
+### 1. Locally using pnpm
 
-1. Start the development server: `pnpm run dev`
-2. Open http://localhost:3000 in your browser
+1. Install dependencies: `pnpm install`
+2. Start the development server: `pnpm run dev`
+3. Open `http://localhost:3000` in your browser
 
-### docker cli
+### 2. docker cli
 
+1. Run docker container:
 ```bash
 docker run -p 3000:3000 mireknguyen/mirekng-homepage
 ```
+2. Open `http://localhost:3000` in your browser
 
-### docker compose
+### 3. docker compose
 
+1. Run docker compose: `docker-compose up -d`
+2. Open `http://localhost:3000` in your browser
+
+#### Alternatively you can add this configuration to your server (Nginx proxy pass)
 ```yml
 version: '3'
+
 services:
   mirekng:
     image: mireknguyen/mirekng-homepage
