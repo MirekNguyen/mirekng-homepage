@@ -20,7 +20,7 @@ You will need npm or pnpm installed on your system.
 1. Clone the repository: `git clone https://github.com/mireknguyen/mirekng-homepage.git`
 2. Navigate to the project directory: `cd mirekng-homepage`
 
-## Usage
+## Running the server
 
 ### 1. Locally using pnpm
 
