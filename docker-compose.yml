@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  mirekng:
+    image: mireknguyen/mirekng-homepage
+    container_name: mirekng
+    ports:
+      - 3000:3000
+    restart: unless-stopped
