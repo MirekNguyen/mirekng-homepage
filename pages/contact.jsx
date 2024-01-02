@@ -1,7 +1,6 @@
 import styles from "../styles/Home.module.css";
 import AnimatedPage from "../components/AnimatedPage";
 import { useState } from "react";
-import { unstable_noStore as noStore } from 'next/cache'
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -13,7 +12,6 @@ const Contact = () => {
     try {
       setError(null);
       setSuccess(null);
-      noStore(); // env variables are evaluated at runtime
       if (!process.env.NEXT_PUBLIC_MAILER_API) {
         throw new Error("Mailer API endpoint not set");
       }
