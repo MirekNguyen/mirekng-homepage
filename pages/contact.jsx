@@ -12,11 +12,8 @@ const Contact = () => {
     try {
       setError(null);
       setSuccess(null);
-      if (!process.env.NEXT_PUBLIC_MAILER_API) {
-        throw new Error("Mailer API endpoint not set");
-      }
       const formData = new FormData(event.currentTarget);
-      const response = await fetch(process.env.NEXT_PUBLIC_MAILER_API, {
+      const response = await fetch(/mailer/, {
         method: "POST",
         body: formData,
       });
@@ -24,7 +21,6 @@ const Contact = () => {
         throw new Error("Failed to submit the data. Please try again.");
       }
       const data = await response.json();
-      console.log(response);
       if (data.status !== "success") {
         throw new Error(data.message || "An unexpected error occurred");
       }
