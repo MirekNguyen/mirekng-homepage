@@ -4,12 +4,20 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import HeadProp from "../components/HeadProp.jsx";
 function MyApp({ Component, pageProps }) {
+  const getLayout =
+    Component.getLayout ??
+    ((page) => (
+      <>
+        <Navbar />
+        {page}
+        <Footer />
+      </>
+    ));
+
   return (
     <ThemeProvider defaultTheme="dark" enableSystem={true} attribute="class">
       <HeadProp />
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      {getLayout(<Component {...pageProps} />)}
     </ThemeProvider>
   );
 }
